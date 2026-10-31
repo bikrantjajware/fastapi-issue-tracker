@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from schemas.practice_schemas import Message, MessageOut
+from app.schemas.practice_schemas import Message, MessageOut
 
 router = APIRouter(prefix='/practice', tags=['practice creating route'])
 

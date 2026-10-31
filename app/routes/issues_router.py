@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException, status
-from app.schemas import IssueCreate, IssueUpdate, IssueOut, IssueResponse, IssueListResponse
+from app.schemas.issues_schemas import IssueCreate, IssueUpdate, IssueOut, IssueResponse, IssueListResponse
 from typing import List, Optional
 from app.storage import load, save
 
