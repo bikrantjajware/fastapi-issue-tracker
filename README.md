@@ -11,9 +11,19 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 uvicorn main:app --reload
+
+```
+## Run locally with Docker
+
+```bash
+docker build -t fastapi-crud .
+docker run -p 8000:8000 fastapi-crud
 ```
 
-The app runs at <http://127.0.0.1:8000>. Interactive API documentation is available at <http://127.0.0.1:8000/docs>, with the alternative documentation at <http://127.0.0.1:8000/redoc>.
+
+The app runs at <http://127.0.0.1:8000> 
+
+Interactive API documentation is available at <http://127.0.0.1:8000/docs>, with the alternative documentation at <http://127.0.0.1:8000/redoc>.
 
 ## Endpoints
 
